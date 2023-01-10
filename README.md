@@ -35,7 +35,7 @@ python3 powermeterChallenge/manage.py runserver
 
 Con esto ya estara corriendo el servidor en  http://127.0.0.1:8000/
 
-##### Se creó el proyecto *core* con todo lo solicitado el ejercicio 1.
+##### Se creó la aplicación *core* con todo lo solicitado el ejercicio 1.
 
 Los endpoints son los siguientes:
 
