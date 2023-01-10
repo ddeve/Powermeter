@@ -1,1 +1,0 @@
-# Powermeter Challenge

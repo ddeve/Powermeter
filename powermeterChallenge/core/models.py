@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MinValueValidator
 
 
 class Meter(models.Model):
@@ -9,4 +10,6 @@ class Meter(models.Model):
 class Measurement(models.Model):
     meter = models.ForeignKey(Meter, on_delete=models.PROTECT)
     timestamp = models.DateTimeField()
-    consumption = models.DecimalField(decimal_places=2, max_digits=16)
+    consumption = models.DecimalField(
+        decimal_places=2, max_digits=16, validators=[MinValueValidator(0)]
+    )
