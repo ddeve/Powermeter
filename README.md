@@ -3,7 +3,7 @@
 
 ### Instalación
 
-En un entorno con Python 3.8 
+En un entorno con Python 3.8 o superior
 
 Descargar el repositorio en una carpeta
 
