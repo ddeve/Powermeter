@@ -40,7 +40,7 @@ Con esto ya estara corriendo el servidor en  http://127.0.0.1:8000/
 Los endpoints son los siguientes:
 
 * Obtener todos los medidores : GET http://127.0.0.1:8000/api/meter/
-* Obtener un medidor por id : GET http://127.0.0.1:8000/api/meter/<id>
+* Obtener un medidor por id : GET http://127.0.0.1:8000/api/meter/{meter_id}
 * Crear un nuevo medidor POST http://127.0.0.1:8000/api/meter/
 
 	dentro del Body pasar el json:
@@ -53,7 +53,7 @@ Los endpoints son los siguientes:
 ```
 
 * Obtener todas las mediciones: GET http://127.0.0.1:8000/api/measurement/
-* Obtener una medición por id: GET http://127.0.0.1:8000/api/measurement/<id>
+* Obtener una medición por id: GET http://127.0.0.1:8000/api/measurement/{measurement_id}
 * Crear una nueva medición POST http://127.0.0.1:8000/api/measurement/
 
 	Dentro del body pasar el json:
@@ -67,16 +67,16 @@ Los endpoints son los siguientes:
 ```
 
 * Obtener la medición de máximo consumo de un medidor: 
-	GET http://127.0.0.1:8000/api/meter/<id>/get_max_consumption/
+	GET http://127.0.0.1:8000/api/meter/{meter_id}/get_max_consumption/
 
 * Obtener la medición de mínimo consumo de un medidor: 
-	GET http://127.0.0.1:8000/api/meter/<id>/get_min_consumption/
+	GET http://127.0.0.1:8000/api/meter/{meter_id}/get_min_consumption/
 
 * Obtener el total de consumo de un medidor: 
-	GET http://127.0.0.1:8000/api/meter/<id>/get_total_consumption/
+	GET http://127.0.0.1:8000/api/meter/{meter_id}/get_total_consumption/
 
 * Obtener el promedio de consumo de un medidor: GET 
-	GET http://127.0.0.1:8000/api/meter/<id>/get_avg_consumption/
+	GET http://127.0.0.1:8000/api/meter/{meter_id}/get_avg_consumption/
 
 
 
